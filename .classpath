@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="Jars/ant-1.7.0.jar"/>
+	<classpathentry kind="lib" path="Jars/ant-launcher-1.7.0.jar"/>
+	<classpathentry kind="lib" path="Jars/bsh-2.0b4.jar"/>
+	<classpathentry kind="lib" path="Jars/bson-3.0.4.jar"/>
+	<classpathentry kind="lib" path="Jars/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="Jars/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="Jars/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="Jars/curvesapi-1.04.jar"/>
+	<classpathentry kind="lib" path="Jars/extentreports-2.41.2.jar"/>
+	<classpathentry kind="lib" path="Jars/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="Jars/hamcrest-core-1.1.jar"/>
+	<classpathentry kind="lib" path="Jars/jcommander-1.48.jar"/>
+	<classpathentry kind="lib" path="Jars/jsoup-1.8.3.jar"/>
+	<classpathentry kind="lib" path="Jars/junit-4.10.jar"/>
+	<classpathentry kind="lib" path="Jars/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="Jars/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="Jars/mongodb-driver-3.0.4.jar"/>
+	<classpathentry kind="lib" path="Jars/mongodb-driver-core-3.0.4.jar"/>
+	<classpathentry kind="lib" path="Jars/poi-3.17.jar"/>
+	<classpathentry kind="lib" path="Jars/poi-examples-3.17.jar"/>
+	<classpathentry kind="lib" path="Jars/poi-excelant-3.17.jar"/>
+	<classpathentry kind="lib" path="Jars/poi-ooxml-3.17.jar"/>
+	<classpathentry kind="lib" path="Jars/poi-ooxml-schemas-3.17.jar"/>
+	<classpathentry kind="lib" path="Jars/poi-scratchpad-3.17.jar"/>
+	<classpathentry kind="lib" path="Jars/selenium-server-standalone-3.13.0.jar"/>
+	<classpathentry kind="lib" path="Jars/snakeyaml-1.15.jar"/>
+	<classpathentry kind="lib" path="Jars/sqlite-jdbc-3.8.11.1.jar"/>
+	<classpathentry kind="lib" path="Jars/testng-6.9.9.jar"/>
+	<classpathentry kind="lib" path="Jars/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
