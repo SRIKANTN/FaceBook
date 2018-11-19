@@ -18,10 +18,10 @@ public class LoginTest extends BaseTest
 	@Test
 	public void login() throws Exception 
 	{
-		//String text = BaseTest.getTextConsole();
+		
 		String username=Exceldata.getData(file_path, "Sheet1", 1,0);
 		String password=Exceldata.getData(file_path, "Sheet1", 1, 1);
-		String text=Exceldata.getData(file_path, "Sheet3", 1, 0);
+	//	String text=Exceldata.getData(file_path, "Sheet3", 1, 0);
 		String path=Exceldata.getData(file_path, "Sheet3", 1, 1);
 		LoginPage lp= new LoginPage(driver);
 		HomePage hp= new HomePage(driver);
@@ -38,6 +38,7 @@ public class LoginTest extends BaseTest
 		GenericUtils.TextEnter(path);
 		Thread.sleep(5000);
 		hp.posting();
+		String text = BaseTest.getTextConsole();
 		GenericUtils.TextEnter(text);
 		Thread.sleep(5000);
 		hp.tagFriendTextBox();
@@ -53,6 +54,7 @@ public class LoginTest extends BaseTest
 			Robot r= new Robot();
 			r.keyPress(KeyEvent.VK_ENTER);
 			Thread.sleep(1000);
+			r.keyRelease(KeyEvent.VK_ENTER);
 		}
 		Thread.sleep(10000);
 		hp.shareButtonClick();

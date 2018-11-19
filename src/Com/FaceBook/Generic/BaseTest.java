@@ -28,16 +28,18 @@ public class BaseTest implements Autoconstant
 		System.setProperty(chrome_key, chrome_value);
 		System.setProperty(gecko_key, gecko_value);
 	}
+	
 	@BeforeSuite
 	public static String getTextConsole()
 	{
 		Scanner sc= new Scanner(System.in);
 		System.out.println("Enter the Posting text");
-		String postingTextsc= sc.nextLine();
-		return postingTextsc;
+		String postingText = sc.nextLine();
+		return postingText;
 		
 		
 	}
+	
 	@BeforeMethod
 	public void preCondition(Method methodName)
 	{
@@ -46,10 +48,6 @@ public class BaseTest implements Autoconstant
 		ChromeOptions cp= new ChromeOptions();
 		cp.addArguments("--disable-notifications");
 		driver= new ChromeDriver(cp);
-		
-//		FirefoxOptions fp= new FirefoxOptions();
-//		fp.addArguments("--disable-notifications");
-//		driver= new FirefoxDriver(fp);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get("https://www.facebook.com/");
