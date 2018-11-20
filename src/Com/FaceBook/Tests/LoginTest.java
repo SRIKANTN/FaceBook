@@ -52,6 +52,7 @@ public class LoginTest extends BaseTest
 			Reporter.log(tagList);
 			hp.tagFriendListBox(tagList);
 			Robot r= new Robot();
+			Thread.sleep(1000);
 			r.keyPress(KeyEvent.VK_ENTER);
 			Thread.sleep(1000);
 			r.keyRelease(KeyEvent.VK_ENTER);
