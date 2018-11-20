@@ -22,6 +22,8 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class BaseTest implements Autoconstant
 {
+	public static String postingText;
+	
 	public WebDriver driver;
 	static
 	{
@@ -30,13 +32,11 @@ public class BaseTest implements Autoconstant
 	}
 	
 	@BeforeSuite
-	public static String getTextConsole()
+	public static  void getTextConsole()
 	{
 		Scanner sc= new Scanner(System.in);
 		System.out.println("Enter the Posting text");
-		String postingText = sc.nextLine();
-		return postingText;
-		
+		postingText = sc.nextLine();		
 		
 	}
 	
@@ -64,7 +64,7 @@ public class BaseTest implements Autoconstant
 			GenericUtils.getScreenShot(driver, name);
 	 }
 	
-		// driver.close();
+		driver.close();
 		
 	}
 }

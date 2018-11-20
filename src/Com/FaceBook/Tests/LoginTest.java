@@ -19,6 +19,7 @@ public class LoginTest extends BaseTest
 	public void login() throws Exception 
 	{
 		
+		
 		String username=Exceldata.getData(file_path, "Sheet1", 1,0);
 		String password=Exceldata.getData(file_path, "Sheet1", 1, 1);
 	//	String text=Exceldata.getData(file_path, "Sheet3", 1, 0);
@@ -38,7 +39,8 @@ public class LoginTest extends BaseTest
 		GenericUtils.TextEnter(path);
 		Thread.sleep(5000);
 		hp.posting();
-		String text = BaseTest.getTextConsole();
+		String text=BaseTest.postingText;
+		
 		GenericUtils.TextEnter(text);
 		Thread.sleep(5000);
 		hp.tagFriendTextBox();
