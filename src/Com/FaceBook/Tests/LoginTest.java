@@ -45,8 +45,6 @@ public class LoginTest extends BaseTest
 		Thread.sleep(5000);
 		hp.tagFriendTextBox();
 		Thread.sleep(5000);
-		
-		
 		int rc=Exceldata.getRowCount(file_path, "Sheet2");
 		for (int i = 1; i <=rc; i++) 
 		{

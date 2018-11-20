@@ -54,7 +54,7 @@ public class BaseTest implements Autoconstant
 	}
 	
 	@AfterMethod()
-	public void postCondition(ITestResult res)
+	public void postCondition(ITestResult res) throws InterruptedException
 	{
 		int status=res.getStatus();
 		
@@ -63,7 +63,7 @@ public class BaseTest implements Autoconstant
 			String name=res.getMethod().getMethodName();
 			GenericUtils.getScreenShot(driver, name);
 	 }
-	
+		Thread.sleep(5000);
 		driver.close();
 		
 	}
